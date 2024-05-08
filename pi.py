@@ -5,3 +5,11 @@ text = """
 
 # TODO
 
+text = text.replace(',', '')
+text = text.replace('.', '')
+
+nonspace = text.split()
+long = list(map(len, nonspace))
+long_str = list(map(str,long))
+output = "".join(long_str)
+print(output)
